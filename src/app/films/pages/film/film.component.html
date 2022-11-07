@@ -1,0 +1,18 @@
+<p *ngIf="!film; else templatefilm">film works!</p>
+<ng-template #templatefilm>
+  <h2>{{ film.title }}</h2>
+    <p>{{ film.director }}</p>
+    <img [src]="film | image" alt="{{ film.id }}">
+    <div>
+      <p>Año: {{ film.year}}</p>
+      <p>Protagonista: {{ film.star }}</p>
+    </div>
+    <div>
+      <p><strong>{{ film.synopsis }}</strong></p>
+    </div>
+  <button [routerLink]="['/films']">
+    volver
+  </button>
+
+
+</ng-template>

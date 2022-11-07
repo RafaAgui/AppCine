@@ -1,0 +1,14 @@
+
+    <h2>{{ film.title }}</h2>
+    <p>{{ film.director }}</p>
+    <img [src]="film | image" alt="{{ film.id }}">
+    <div>
+      <p>Año: {{ film.year}}</p>
+      <p>Protagonista: {{ film.star }}</p>
+    </div>
+    <button [routerLink]="['/films', film.id]">
+      Leer más...
+    </button>
+    <button [routerLink]="['/films/editar', film.id]">
+      Editar
+    </button>

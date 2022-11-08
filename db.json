@@ -10,7 +10,7 @@
     {
       "id": "eloy_01",
       "title": "Navajeros",
-      "director": "Eloy de la Iglesia",
+      "director": "",
       "star": "José Luis Manzano",
       "year": "1980",
       "synopsis": "Primera película del tándem Manzano - De la Iglesia. Narra las aventuras de José Joaquín Sánchez Frutos “El Jaro” uno de los delincuentes más famosos de la ciudad de Madrid, que murió a balazos, con apenas dieciséis años, a manos de un ciudadano que lo sorprendió durante un atraco."
@@ -23,7 +23,7 @@
       "year": "1982",
       "synopsis": "Una rara avis dentro de la filmografía quinqui, y quizás por eso mismo una de las mejores películas del filón. Nos cuenta las peripecias de tres jóvenes (Manzano, Antonio y Rosario Flores) en la que José (interpretado por Manzano) deja embarazada a Rosario y entre los tres intentan buscar dinero para que ella aborte, pero con la gran tasa de paro juvenil de la época solo encuentran oportunidades en la delincuencia y el trapicheo."
     },
-        {
+    {
       "id": "eloy_03",
       "title": "El pico",
       "director": "Eloy de la Iglesia",
@@ -31,7 +31,7 @@
       "year": "1983",
       "synopsis": "Dos jóvenes en el País Vasco, el primero hijo de un Guardia Civil y el segundo hijo de un político abertzale, que se conocen del instituto se inician en el mundo de las drogas hasta verse enganchados a la heroína, lo que les llevará a su perdición."
     },
-        {
+    {
       "id": "eloy_04",
       "title": "El pico 2",
       "director": "Eloy de la Iglesia",
@@ -39,7 +39,7 @@
       "year": "1984",
       "synopsis": "Después del asesinato de un camello y su mujer en el País Vasco; Paco, hijo de un Guardia Civil, tiene que entrar en prisión. Allí conoce los sinsabores de las la vida penitenciaria y cuando por fin, tras la influencia de su padre es devuelto a la libertad, sólo podrá delinquir para seguir consiguiendo droga."
     },
-        {
+    {
       "id": "eloy_05",
       "title": "La estanquera de vallecas",
       "director": "Eloy de la Iglesia",
@@ -94,6 +94,22 @@
       "star": "Joan Bentallé",
       "year": "1995",
       "synopsis": "Epílogo de la serie en la que de nuevo inspirada en la vida de el Vaquilla, nos muestra uno de los permisos penitenciarios de los que pudo disfrutar, en el que parece que todo el mundo está convencido de su fuga. Aunque tampoco se considere una película de género quinqui, si hay temas recurrentes (la delincuencia, la cárcel, el tráfico de drogas) que están presentes durante toda la película."
+    },
+    {
+      "id": "9cY8i55",
+      "title": "Deprisa, Deprisa",
+      "director": "Otro",
+      "star": "Jose Valdelomar",
+      "year": "1981",
+      "synopsis": "Unos jóvenes pasan el día cometiendo atracos, para tener una vida normal"
+    },
+    {
+      "id": "-bLkdQh",
+      "title": "La Corea",
+      "director": "",
+      "star": "",
+      "year": "1977",
+      "synopsis": "Un joven “de pueblo” llega a Madrid para buscar trabajo, donde le recibe un amigo, del mismo pueblo, que le pone en contacto con Charo “la Corea”, una mujer que maneja los chanchullos del barrio, entre ellos, proporcionar jóvenes a mujeres adineradas o a los americanos de la base de Torrejón. Todo se complica cuando ella se encapricha del joven."
     }
   ]
 }

@@ -11,4 +11,5 @@ export interface Film {
 export enum Director {
   DelaLoma = 'José Antonio de la Loma',
   DelaIglesia = 'Eloy de la Iglesia',
+  otro = 'Otro'
 }

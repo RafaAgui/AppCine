@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Film, Director } from '../../interfaces/films.interface';
 import { FilmsService } from '../../services/films.service';
+import { switchMap } from 'rxjs';
 
 
 @Component({
@@ -27,28 +29,40 @@ export class AddComponent implements OnInit {
   film: Film = {
     id: '',
     title: '',
-    director: Director.DelaLoma,
+    director: Director.DelaIglesia,
     star: '',
     year: '',
     synopsis:''
   };
 
-  constructor( private filmsservice: FilmsService) { }
+  constructor( private filmsservice: FilmsService,
+               private activatedRoute: ActivatedRoute,
+               private router: Router ) { }
 
 
   save() {
     if(this.film.title.trim().length === 0){
       return;
     }
+    if (this.film.id){
+      this.filmsservice.updateFilms (this.film)
+      .subscribe (film => console.log('Actualizar película', film))
+    } else {
 
-    this.filmsservice.addFilms (this.film)
-    .subscribe(resp => {console.log('Respuesta', resp);
-  })
+      this.filmsservice.addFilms (this.film)
+      .subscribe(film => {
+        this.router.navigate(['/films/add', film.id]);
+      })
+    }
   }
 
 
-
   ngOnInit(): void {
+    this.activatedRoute.params
+    .pipe(
+      switchMap( ({id}) => this.filmsservice.getFilmId(id))
+    )
+    .subscribe( film => this.film = film)
   }
 
 }

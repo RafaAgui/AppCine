@@ -1,4 +1,4 @@
-<h1>Nueva Película</h1>
+<h1>Nueva Película {{film.title}}</h1>
 <p><strong>  añadir</strong></p>
 <form action="">
   <div>
@@ -28,7 +28,7 @@
     <label for="image">Imágen</label>
     <input type="url" required [(ngModel)]="film.alt_img" name="img">
   </div>
-  <button (click)="save">
+  <button (click)="save()">
     Guardar
   </button>
 </form>

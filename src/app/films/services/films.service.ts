@@ -24,5 +24,9 @@ export class FilmsService {
     return this.http.post<Film>('http://localhost:3000/films/', film);
   }
 
+  updateFilms(film: Film) : Observable<Film> {
+    return this.http.put<Film>(`http://localhost:3000/films/${film.id}`, film);
+  }
+
 
 }

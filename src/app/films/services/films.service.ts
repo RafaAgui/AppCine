@@ -28,5 +28,9 @@ export class FilmsService {
     return this.http.put<Film>(`http://localhost:3000/films/${film.id}`, film);
   }
 
+  deleteFilms(id: string) : Observable<any> {
+    return this.http.delete<any>(`http://localhost:3000/films/${id}`);
+  }
+
 
 }

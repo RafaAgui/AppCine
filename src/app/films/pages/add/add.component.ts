@@ -55,7 +55,12 @@ export class AddComponent implements OnInit {
       })
     }
   }
-
+  remove(){
+    this.filmsservice.deleteFilms(this.film.id!)
+    .subscribe(resp => {
+      this.router.navigate(['/films'])
+    })
+  }
 
   ngOnInit(): void {
     this.activatedRoute.params

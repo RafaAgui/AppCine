@@ -31,5 +31,10 @@
   <button (click)="save()">
     Guardar
   </button>
+  <button *ngIf="film.id" (click)="remove()">
+    Borrar
+  </button>
 </form>
-
+<div>
+  <img src='{{ film.alt_img }}' alt="">
+</div>
